@@ -84,7 +84,8 @@ return {
     dependencies = {
       "jose-elias-alvarez/typescript.nvim",
       init = function()
-        require("lazyvim.util") .lsp.on_attach(function(_, buffer)
+        require("lazyvim.util") .lsp.attach(function(_, buffer)
+        -- require("lazyvim.util") .lsp.on_attach(function(_, buffer)
           -- stylua: ignore
           vim.keymap.set( "n", "<leader>co", "TypescriptOrganizeImports", { buffer = buffer, desc = "Organize Imports" })
           vim.keymap.set("n", "<leader>cR", "TypescriptRenameFile", { desc = "Rename File", buffer = buffer })
@@ -136,7 +137,8 @@ return {
         "typescript",
         "vim",
         "yaml",
-        "c"
+        "c",
+        "kivy"
       },
     },
   },
@@ -149,8 +151,10 @@ return {
     opts = function(_, opts)
       -- add tsx and treesitter
       vim.list_extend(opts.ensure_installed, {
-        "tsx",
-        "typescript",
+                "tsx",
+                "typescript",
+                "python",
+                "c"
       })
     end,
   },
@@ -190,11 +194,11 @@ return {
     "mason-org/mason.nvim",
     opts = {
       ensure_installed = {
-        "stylua",
-        "shellcheck",
-        "shfmt",
-        "flake8",
-      },
+                "stylua",
+                "shellcheck",
+                "shfmt",
+                "flake8",
+           },
     },
   },
 }
