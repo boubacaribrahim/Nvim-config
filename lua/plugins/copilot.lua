@@ -12,10 +12,10 @@ return {
     },
 
     keys = {
-      { "<leadear>zc", ":CopilotChat<CR>", mode = "n", desc = "Chat whith Copilot" },
-      { "<leadear>ze", ":CopilotChatExplain<CR>", mode = "v", desc = "Explain Code" },
-      { "<leadear>zr", ":CopilotChatReview<CR>", mode = "v", desc = "Review Code" },
-      { "<leadear>zf", ":CopilotChatFix<CR>", mode = "v", desc = "Optimize Code" },
+      { "<leader>zc", ":CopilotChat<CR>", mode = "n", desc = "Chat whith Copilot" },
+      { "<leader>ze", ":CopilotChatExplain<CR>", mode = "v", desc = "Explain Code" },
+      { "<leader>zr", ":CopilotChatReview<CR>", mode = "v", desc = "Review Code" },
+      { "<leader>zf", ":CopilotChatFix<CR>", mode = "v", desc = "Optimize Code" },
       { "<C-r>", ":CopilotChatReset<CR>", mode = "n", desc = "Reset Chat Window" },
     },
   },

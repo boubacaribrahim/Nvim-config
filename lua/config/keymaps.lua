@@ -33,9 +33,9 @@ vim.opt.autoindent = true -- Copy indent from current line when starting a new o
 -- Search and Behavior
 vim.opt.ignorecase = true -- Case-insensitive search
 vim.opt.smartcase = true -- Case-sensitive if search contains uppercase
-vim.opt.hlsearch = false -- Disable highlighting after search is done
+-- vim.opt.hlsearch = true -- Disable highlighting after search is done
 vim.opt.incsearch = true -- Show search results as you type
-vim.opt.clipboard = "unnamedplus" -- Use system clipboard
-vim.opt.mouse = "a" -- Enable mouse support
+-- vim.opt.clipboard = "unnamedplus" -- Use system clipboard
+-- vim.opt.mouse = "a" -- Enable mouse support
 
 vim.set("set fileformat=unix")
