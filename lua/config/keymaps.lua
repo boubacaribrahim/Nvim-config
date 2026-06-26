@@ -9,6 +9,8 @@ function Map(mode, lhs, rhs, opts)
   vim.keymap.set(mode, lhs, rhs, options)
 end
 
+vim.g.lazyvim_check_order = false
+
 vim.g.mapleader = " "
 
 -- Map("t", "<C-h>", "<cmd>wincmd h<CR>")
