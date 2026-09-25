@@ -40,4 +40,4 @@ vim.opt.incsearch = true -- Show search results as you type
 -- vim.opt.clipboard = "unnamedplus" -- Use system clipboard
 -- vim.opt.mouse = "a" -- Enable mouse support
 
-vim.set("set fileformat=unix")
+-- vim.opt.fileformat = "unix"
